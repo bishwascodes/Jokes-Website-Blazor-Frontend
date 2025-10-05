@@ -2,10 +2,10 @@
 
 <PageTitle>Jokes - Home</PageTitle>
 
-@inject IHttpClientFactory HttpClientFactory
+@* @inject IHttpClientFactory HttpClientFactory *@
 
 <h2>Jokes</h2>
-
+@* 
 @if (jokes == null)
 {
     <p>Loading...</p>
@@ -40,4 +40,4 @@ else
         public int CategoryId { get; set; }
         public string CategoryName { get; set; } = string.Empty;
     }
-}
+} *@
