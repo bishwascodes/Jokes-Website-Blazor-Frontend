@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,6 +81,10 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Host.razor",
@@ -110,9 +114,9 @@
               "Title": "_Host.cshtml",
               "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\proj07\\BlazorApp1\\Components\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "Components\\Pages\\_Host.cshtml",
-              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\proj07\\BlazorApp1\\Components\\Pages\\_Host.cshtml",
-              "RelativeToolTip": "Components\\Pages\\_Host.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\proj07\\BlazorApp1\\Components\\Pages\\_Host.cshtml*",
+              "RelativeToolTip": "Components\\Pages\\_Host.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-05T02:17:25.983Z",
               "EditorCaption": ""
@@ -128,10 +132,6 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAwwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-05T02:16:47.398Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
