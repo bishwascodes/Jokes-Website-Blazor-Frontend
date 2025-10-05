@@ -1,0 +1,43 @@
+﻿@page "/"
+
+<PageTitle>Jokes - Home</PageTitle>
+
+@inject IHttpClientFactory HttpClientFactory
+
+<h2>Jokes</h2>
+
+@if (jokes == null)
+{
+    <p>Loading...</p>
+}
+else if (!jokes.Any())
+{
+    <p>No jokes found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var joke in jokes)
+        {
+            <li>@joke</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Joke> jokes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = HttpClientFactory.CreateClient("JokeApi");
+        jokes = await client.GetFromJsonAsync<List<Joke>>("/api/Jokes");
+    }
+
+    public class Joke
+    {
+        public int JokeId { get; set; }
+        public string Content { get; set; } = string.Empty;
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; } = string.Empty;
+    }
+}

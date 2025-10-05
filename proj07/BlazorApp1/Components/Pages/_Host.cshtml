@@ -1,0 +1,25 @@
+﻿@page "/"
+@namespace BlazorApp1.Pages
+@using BlazorApp1.Components
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Blazor Server App</title>
+    <base href="~/" />
+
+    <!-- Your CSS files go here -->
+    <link rel="stylesheet" href="css/site-layout.css" />
+    <link href="BlazorApp1.styles.css" rel="stylesheet" />
+</head>
+<body>
+    <app>
+        <component type="typeof(App)" render-mode="ServerPrerendered" />
+    </app>
+
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>
