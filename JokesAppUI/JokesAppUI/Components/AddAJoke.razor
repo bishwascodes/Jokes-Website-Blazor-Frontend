@@ -1,0 +1,157 @@
+﻿@using JokesAppUI.Models
+@inject JokesAppUI.Services.JokeService JokeService
+@inject JokesAppUI.Services.CategoryService CategoryService
+@inject JokesAppUI.Services.AudienceService AudienceService
+
+<!-- Add Button -->
+<div class="add-button-container text-center mt-4">
+    <button type="button" class="add-button btn btn-success" @onclick="ToggleForm">
+        <span style="font-size: 20px;">+</span> Add Joke
+    </button>
+</div>
+
+@if (showForm)
+{
+    <div class="form-container mt-4 p-4 border rounded bg-light shadow-sm">
+        <h3>Add New Joke</h3>
+
+        <!-- Joke Content -->
+        <div class="form-group mb-3">
+            <label>Joke Content</label>
+            <textarea class="form-control" @bind="newJoke.Content" placeholder="Enter your joke..." rows="3"></textarea>
+        </div>
+
+        <!-- Category Dropdown -->
+        <div class="form-group mb-3">
+            <label>Category</label>
+            @if (categories == null)
+            {
+                <p><em>Loading categories...</em></p>
+            }
+            else if (!categories.Any())
+            {
+                <p class="text-danger">No categories found.</p>
+            }
+            else
+            {
+                <select class="form-select" @bind="newJoke.CategoryId">
+                    <option value="">-- Select Category --</option>
+                    @foreach (var cat in categories)
+                    {
+                        <option value="@cat.Id">@cat.Name</option>
+                    }
+                </select>
+            }
+        </div>
+
+        <!-- Audience Multi-select -->
+        <div class="form-group mb-3">
+            <label>Audiences</label>
+            @if (audiences == null)
+            {
+                <p><em>Loading audiences...</em></p>
+            }
+            else if (!audiences.Any())
+            {
+                <p class="text-danger">No audiences found.</p>
+            }
+            else
+            {
+                <select multiple class="form-select" @onchange="OnAudienceSelected">
+                    @foreach (var aud in audiences)
+                    {
+                        <option value="@aud.Id">@aud.Name (@aud.Age+)</option>
+                    }
+                </select>
+                <small class="text-muted">Hold Ctrl (Windows) or Cmd (Mac) to select multiple.</small>
+            }
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-buttons mt-3">
+            <button type="button" class="btn btn-primary me-2" @onclick="AddJokeAsync">Submit Joke</button>
+            <button type="button" class="btn btn-secondary" @onclick="ToggleForm">Cancel</button>
+        </div>
+
+        @if (!string.IsNullOrEmpty(message))
+        {
+            <div class="alert alert-success mt-3">@message</div>
+        }
+    </div>
+}
+
+@if (jokes.Any())
+{
+    <div class="joke-list mt-4 py-3 mb-3">
+        <h4>😂 Added Jokes</h4>
+        <ul class="list-group">
+            @foreach (var j in jokes)
+            {
+                <li class="list-group-item">
+                    <p>@j.Content</p>
+                    <small class="text-muted">Category: @j.CategoryName</small><br />
+                    <small>Audiences: @string.Join(", ", j.Audiences)</small>
+                </li>
+            }
+        </ul>
+    </div>
+}
+
+@code {
+    private bool showForm = false;
+    private string? message;
+    private NewJokeRequest newJoke = new();
+    private List<Joke> jokes = new();
+    private List<Category>? categories;
+    private List<Audience>? audiences;
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await CategoryService.GetCategoriesAsync();
+        audiences = await AudienceService.GetAudiencesAsync();
+    }
+
+    private void ToggleForm()
+    {
+        showForm = !showForm;
+        message = null;
+    }
+
+    private void OnAudienceSelected(ChangeEventArgs e)
+    {
+        var selected = e.Value?.ToString();
+        if (selected != null)
+        {
+            // When multi-select is used, Blazor provides comma-separated values
+            newJoke.AudienceIds = selected
+                .Split(',', StringSplitOptions.RemoveEmptyEntries)
+                .Select(id => int.TryParse(id.Trim(), out int parsedId) ? parsedId : 0)
+                .Where(id => id > 0)
+                .ToList();
+        }
+    }
+
+    private async Task AddJokeAsync()
+    {
+        try
+        {
+            var result = await JokeService.AddJokeAsync(newJoke);
+
+            if (result != null)
+            {
+                jokes.Add(result);
+                message = "Joke added successfully!";
+                newJoke = new();
+                showForm = false;
+            }
+            else
+            {
+                message = "Failed to add joke. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            message = $"Error: {ex.Message}";
+        }
+    }
+}

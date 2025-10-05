@@ -1,0 +1,68 @@
+﻿ @* <ul class="joke-categories">
+                            <li class="active">All</li>
+                            <li>Programming</li>
+                            <li>General</li>
+                            <li>Knock-Knock</li>
+                            <li>Dad Jokes</li>
+                        </ul> *@
+@inject JokesAppUI.Services.CategoryService CategoryService
+
+<h3>Categories</h3>
+
+@if (categories == null)
+{
+    <p><em>Loading categories...</em></p>
+}
+else if (categories.Count == 0)
+{
+    <p>No categories found 😢</p>
+}
+else
+{
+    <ul class="list-group mt-3">
+        @foreach (var cat in categories)
+        {
+            <li class="list-group-item">
+                <a href="/category/@Uri.EscapeDataString(cat.Name)" class="text-decoration-none">
+                    @cat.Name
+                </a>
+            </li>
+        }
+    </ul>
+}
+
+<hr />
+
+
+
+@if (message != null)
+{
+    <p class="mt-2">@message</p>
+}
+
+@code {
+    private List<JokesAppUI.Models.Category>? categories;
+    
+    private string? message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await CategoryService.GetCategoriesAsync();
+    }
+
+    //private async Task AddCategory()
+    // {
+    //     var created = await CategoryService.AddCategoryAsync(newCategory);
+    //     if (created != null)
+    //     {
+    //         categories?.Add(created);
+    //         message = $"✅ Added category: {created.Name}";
+    //         newCategory = new(); reset input
+    //     }
+    //     else
+    //     {
+    //         message = "❌ Failed to add category. Check console.";
+    //     }
+    // }
+}
+

@@ -1,0 +1,76 @@
+﻿@page "/category/{name?}"
+@inject JokesAppUI.Services.JokeService JokeService
+@inject NavigationManager Navigation
+
+@if (string.IsNullOrWhiteSpace(name))
+{
+    <JokeCategories/>
+} else{
+<h3>📚 Jokes in @decodedCategoryName</h3>
+
+@if (loading)
+{
+    <p><em>Loading jokes...</em></p>
+}
+else if (filteredJokes == null || filteredJokes.Count == 0)
+{
+    <p>No jokes found in this category 😢</p>
+}
+else
+{
+    <div class="list-group mt-3">
+        @foreach (var joke in filteredJokes)
+        {
+            <div class="list-group-item mb-3">
+                <p>@joke.Content</p>
+                <small class="text-muted">Category: @joke.CategoryName</small><br />
+                <small>Audiences: @string.Join(", ", joke.Audiences)</small>
+            </div>
+        }
+    </div>
+}
+
+<button class="btn btn-secondary mt-3" @onclick="GoBack">⬅ Back to Categories</button>
+
+@code {
+    [Parameter] public string name { get; set; } = string.Empty;
+
+    private List<JokesAppUI.Models.Joke>? filteredJokes;
+    private bool loading = true;
+    private string decodedCategoryName = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCategoryJokes();
+    }
+
+    private async Task LoadCategoryJokes()
+    {
+        try
+        {
+            // Decode the category name from URL (e.g. "Dad%20Jokes" → "Dad Jokes")
+            decodedCategoryName = Uri.UnescapeDataString(name);
+
+            // Get all jokes from API
+            var allJokes = await JokeService.GetJokesAsync();
+
+            // Filter by category name (case-insensitive)
+            filteredJokes = allJokes
+                .Where(j => j.CategoryName.Equals(decodedCategoryName, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+            loading = false;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading jokes for category '{name}': {ex.Message}");
+            loading = false;
+        }
+    }
+
+    private void GoBack()
+    {
+        Navigation.NavigateTo("/category");
+    }
+}
+}

@@ -1,0 +1,56 @@
+﻿@inject JokesAppUI.Services.AudienceService AudienceService
+
+<h3>Audiences</h3>
+
+@if (audiences == null)
+{
+    <p><em>Loading audiences...</em></p>
+}
+else if (audiences.Count == 0)
+{
+    <p>No audiences found 😢</p>
+}
+else
+{
+    <ul class="list-group mt-3">
+        @foreach (var audience in audiences)
+        {
+            <li class="list-group-item">
+                <strong>@audience.Name</strong> (Age: @audience.Age)
+            </li>
+        }
+    </ul>
+}
+
+<hr />
+@* 
+<h4>Add New Audience</h4>
+
+<div class="mb-2">
+    <label>Name:</label>
+    <input @bind="newAudience.Name" class="form-control" />
+</div>
+
+<div class="mb-2">
+    <label>Age:</label>
+    <input type="number" @bind="newAudience.Age" class="form-control" />
+</div>
+
+<button class="btn btn-primary mt-2" @onclick="AddAudience">Add Audience</button> *@
+
+@* @if (message != null)
+{
+    <p class="mt-2">@message</p>
+} *@
+
+@code {
+    private List<JokesAppUI.Models.Audience>? audiences;
+    // private string? message;
+
+    protected override async Task OnInitializedAsync()
+    {
+         var result = await AudienceService.GetAudiencesAsync();
+        audiences = result.OrderByDescending(a => a.Id).ToList();
+    }
+
+}

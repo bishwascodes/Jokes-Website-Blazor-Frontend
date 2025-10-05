@@ -1,0 +1,45 @@
+﻿@inject JokesAppUI.Services.JokeService JokeService
+ 
+<!-- Jokes List -->
+                
+<h3>😂 Jokes</h3>
+
+@if (jokes == null)
+{
+    <p><em>Loading jokes...</em></p>
+}
+else if (jokes.Count == 0)
+{
+    <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <div class="empty-icon">😄</div>
+            <p class="empty-text">No jokes yet. Add one to get started!</p>
+        </div>
+}
+else
+{
+    <div class="list-group jokes-list mt-3"  id="jokesList">
+        @foreach (var joke in jokes)
+        {
+            <div class="list-group-item mb-3" >
+                <p>@joke.Content</p>
+                <small class="text-muted">
+                    Category: @joke.CategoryName
+                </small>
+                <br />
+                <small>Audiences: @string.Join(", ", joke.Audiences)</small>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<JokesAppUI.Models.Joke>? jokes;
+
+    protected override async Task OnInitializedAsync()
+    {
+         var result = await JokeService.GetJokesAsync();
+        jokes = result.OrderByDescending(j => j.Id).ToList();
+    }
+}
+
