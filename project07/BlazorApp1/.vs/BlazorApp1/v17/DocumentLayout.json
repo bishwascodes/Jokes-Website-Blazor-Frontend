@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\pages\\fetchdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:pages\\fetchdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\shared\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:shared\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39EE1B2D-8489-4CA4-BEB2-DDE8FF3F0E37}|BlazorApp1.csproj|c:\\users\\snow library student\\documents\\backend web practice\\week07\\project07\\blazorapp1\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -18,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,34 +105,138 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\Counter.razor",
+              "RelativeToolTip": "Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-05T01:53:55.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-05T01:55:14.545Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-05T01:53:40.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FetchData.razor",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\FetchData.razor",
+              "RelativeDocumentMoniker": "Pages\\FetchData.razor",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\FetchData.razor",
+              "RelativeToolTip": "Pages\\FetchData.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-05T01:48:03.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-05T01:14:10.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T01:20:38.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\Index.razor",
+              "RelativeToolTip": "Pages\\Index.razor",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwCAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-05T01:19:19.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-05T01:12:49.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Header.razor",
               "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Shared\\Header.razor",
               "RelativeDocumentMoniker": "Shared\\Header.razor",
               "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Shared\\Header.razor",
               "RelativeToolTip": "Shared\\Header.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-05T01:10:15.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "_Host.cshtml",
               "DocumentMoniker": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
-              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\_Host.cshtml*",
-              "RelativeToolTip": "Pages\\_Host.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\project07\\BlazorApp1\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Pages\\_Host.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-05T01:08:31.105Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
