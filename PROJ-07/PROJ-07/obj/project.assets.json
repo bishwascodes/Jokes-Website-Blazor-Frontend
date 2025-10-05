@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\paula\\.nuget\\packages\\": {},
+    "C:\\Users\\Snow Library Student\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paula\\Desktop\\USA\\Backend\\PROJ-07\\proj-07-bishwas\\PROJ-07\\PROJ-07\\PROJ-07.csproj",
+      "projectUniqueName": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\PROJ-07\\PROJ-07\\PROJ-07.csproj",
       "projectName": "PROJ-07",
-      "projectPath": "C:\\Users\\paula\\Desktop\\USA\\Backend\\PROJ-07\\proj-07-bishwas\\PROJ-07\\PROJ-07\\PROJ-07.csproj",
-      "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paula\\Desktop\\USA\\Backend\\PROJ-07\\proj-07-bishwas\\PROJ-07\\PROJ-07\\obj\\",
+      "projectPath": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\PROJ-07\\PROJ-07\\PROJ-07.csproj",
+      "packagesPath": "C:\\Users\\Snow Library Student\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Snow Library Student\\Documents\\Backend Web practice\\week07\\PROJ-07\\PROJ-07\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Snow Library Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
